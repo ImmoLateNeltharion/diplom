@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundLight"
+    tools:context=".AddHomeworkActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить домашнее задание"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_homework"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите домашнее задание"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColor="@color/backgroundLight"
+        android:hintTextColor="@color/colorAccent"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить фото"
+        android:background="@drawable/day_background"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_homework_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_save_homework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:background="@drawable/day_background"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:padding="12dp" />
+</LinearLayout>

@@ -1,0 +1,539 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RatingsActivity"
+    android:background="@color/backgroundLight">
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Расписание"
+        android:background="@drawable/day_background"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+    <!-- Example Table for Subject and Rating -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Математика"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="@color/backgroundLight"
+                android:textColor="@color/black"
+                android:layout_span="6" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 1"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 2"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 3"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 4"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 5"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rating_1_kt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100
+"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_rating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Программирование"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_span="6" />
+        </TableRow>
+
+        <TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 1"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 2"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 3"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 4"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 5"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rating_1_kt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_2_kt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_rating_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Психология"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_span="6" />
+        </TableRow>
+
+        <TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 1"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 2"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 3"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 4"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 5"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rating_1_kt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="93"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_rating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Физическая культура"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_span="6" />
+        </TableRow>
+
+        <TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 1"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 2"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 3"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 4"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT 5"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rating_1_kt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rating_1_kt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_rating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="71"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+    </TableLayout>
+
+</LinearLayout>

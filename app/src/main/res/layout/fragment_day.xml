@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundLight"
+    tools:context=".DayFragment">
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Рейтинг"
+        android:background="@drawable/day_background"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Current Day of the Week -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundLight"
+        android:padding="8dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Monday -->
+            <TextView
+                android:id="@+id/day_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПН"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background" />
+
+            <!-- Repeat for other days -->
+            <TextView
+                android:id="@+id/day_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ВТ"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background" />
+
+            <TextView
+                android:id="@+id/day_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СР"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background" />
+
+            <TextView
+                android:id="@+id/day_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ЧТ"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background" />
+
+            <TextView
+                android:id="@+id/day_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПТ"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background" />
+
+            <TextView
+                android:id="@+id/day_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/day_background"
+                android:padding="16dp"
+                android:text="СБ"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/backgroundLight"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Time slot 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8:00-9:35"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/subject_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Предмет"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hintTextColor="@color/colorAccent"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Repeat for other time slots -->
+
+            <!-- Time slot 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/room_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Аудитория"
+                    android:hintTextColor="@color/colorAccent"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/dz" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9:45-11:20"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/subject_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Предмет"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hintTextColor="@color/colorAccent"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/room_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Аудитория"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:hintTextColor="@color/colorAccent"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/dz" />
+            </LinearLayout>
+
+
+            <!-- Repeat for other time slots -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11:50-1:20"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/subject_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Предмет"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hintTextColor="@color/colorAccent"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/room_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Аудитория"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:hintTextColor="@color/colorAccent"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/dz" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Schedule"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:marginTop="16dp" />
+</LinearLayout>
